@@ -1,0 +1,44 @@
+html, body{
+	font-weight: @text-weight;
+	font-size: @text-size-body;
+	font-family: @text-font;
+	color: @text-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: inherit;
+}
+
+h1{
+	font-weight:@text-weight-h1;
+	font-size:@text-size-h1;
+}
+h2{
+	font-weight:@text-weight-h2;
+	font-size:@text-size-h2;
+}
+h3{
+	font-weight:@text-weight-h3;
+	font-size:@text-size-h3;
+}
+h4{
+	font-weight:@text-weight-h4;
+	font-size:@text-size-h4;
+}
+h5{
+	font-weight:@text-weight-h5;
+	font-size:@text-size-h5;
+}
+h6{
+	font-weight:@text-weight-h6;
+	font-size:@text-size-h6;
+}
+
+a{
+	text-decoration: none;
+	color: @link-color;
+	&:active, &:hover, &:focus{
+		text-decoration: none;
+		color: @link-color-hover;
+	}
+}

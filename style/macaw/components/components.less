@@ -1,0 +1,232 @@
+@import "../../vars.less";
+
+
+@media screen and (min-width : 1100px) {
+
+    .si-components-wrapper{
+        width : 80%; 
+        margin : auto; 
+        padding-top : 2rem;
+    }
+    
+    .si-components{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > .si-left-column{
+            padding-top: 1rem;
+            width: calc(20%);
+        }
+        
+        & > .si-right-column{
+            
+            border-left: 1px solid @tab-separator-color;
+            position: relative;
+            width: 80%;
+            overflow: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            padding-right: 1rem;
+
+            .component-title{
+                color: @primary-color;
+                font-size: 30px;
+            }
+            
+            .si-basic{
+
+                & > .si-basic-demo{
+                    & > .si-card{
+                        & > .header{
+                            & > .si-picture{
+                                margin-bottom: 2rem;
+                                & > .si-profile-picture{
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        & > .si-titled-card{
+                            & > .si-picture{
+                                & > .si-profile-picture{
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1099px) {
+
+    .si-components-wrapper{
+        margin : auto; 
+        width : 100%; 
+        padding-top : 2rem;
+    }
+
+    .si-components{
+        display: inline;
+
+        & > .si-left-column{
+            border: none;
+            margin-right: 0;
+            padding-top: 1rem;
+            width: 100%;
+
+        }
+
+        & > .si-right-column{  
+            padding: 1rem;
+            margin-top: 1rem;
+            border-top: 1px solid @tab-separator-color;
+            position: relative;
+            width: 100%;
+            overflow: auto;
+
+            .component-title{
+                color: @primary-color;
+            }
+        }
+    }
+}
+
+
+.si-definition, .component-documentation{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &-item{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+.si-usage{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@table-prefix-cls: ~"@{ant-prefix}-table";
+
+.si-basic{
+
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border: 1px solid @tab-separator-color;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+
+    & > .si-basic-demo{
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid @tab-separator-color;
+
+        & > .si-card, & > .si-jumbo-button, .si-profile-picture, & > .si-modal-container, & > .si-alert, & > .si-date-picker{
+            margin: 42px 20px 50px;
+            width: 350px;
+        }
+        .si-switch{
+            margin-right: 1rem;
+        }
+        & > .si-select{
+            margin: 42px 20px 50px;
+            width: 350px;
+        }
+
+        & > .multi-select-demo{
+            margin: 42px 20px 50px;
+        }
+        .si-profile{
+            // margin-top: 42px;
+            margin-bottom: 42px;
+        }
+
+         & > .menu, & > .@{table-prefix-cls}-wrapper{
+            padding: 42px 20px 50px;
+         }
+
+        & > .si-tabs{
+            padding: 42px 20px 50px;
+            button{
+                align-self: flex-start;
+            }
+
+        }
+
+        & > .web-nav-demo{
+            height: 110px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        & > .si-inputs-demo{
+            display: flex;
+            margin: 42px 20px 50px;
+            flex-wrap: wrap;
+            & > .si-input-wrapper{
+                margin-right: 2rem;
+            }
+
+        }
+
+        & > .si-sub-left-menu{
+            margin: 42px 0px 50px 20px;
+        }
+
+        & > .icons-and-names{
+            display: flex;
+            flex-direction: column;
+            padding-top: 42px;
+            padding-bottom: 50px;
+            
+
+            & > .si-icon-and-name{
+                margin-left: 20px;
+            }
+
+        }
+
+
+
+    }
+
+    & > .si-basic-explained{
+        position : relative;
+        margin-top : 2rem;
+
+        & > .header{
+            position: absolute;
+            background-color: white;
+            top: -35px;
+            margin-left: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+    }
+
+}
+
+.pic-plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .plus{
+        margin-right: 5rem;
+    }
+}
+//hack to make it look okay
+.mcw-bizz-auth-layout .si-titled-card {
+    margin-left: -1px;
+}

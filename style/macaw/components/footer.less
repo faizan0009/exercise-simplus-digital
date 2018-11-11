@@ -1,0 +1,24 @@
+.footer{
+	height: 150px;
+	width: 100%;
+	background-color: @primary-color;
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem;
+	
+	& > .col{
+		display: flex;
+		flex-direction: column;
+		color: white;
+
+		& > .title {
+			margin-bottom: 0.5rem;
+			font-weight: 500;
+		}
+	}
+
+	*:before,
+	*:after {
+	  box-sizing: inherit;
+	}
+}
